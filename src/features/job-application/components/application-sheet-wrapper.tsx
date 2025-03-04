@@ -53,7 +53,7 @@ const ApplicationSheet = ({
           </span>
         </PrimaryButton>
       )}
-      <SheetContent className='w-full md:max-w-2xl space-y-4'>
+      <SheetContent className='max-sm:h-full max-sm:overflow-y-scroll w-full md:max-w-2xl space-y-4'>
         <SheetHeader>
           <SheetTitle>
             {isEdit ? 'Edit Job Application' : 'Add a New Job Application'}

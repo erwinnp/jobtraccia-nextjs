@@ -48,7 +48,7 @@ const CTASection = () => {
           </motion.h3>
           <motion.p
             variants={FADE_DOWN_VARIANTS}
-            className='text-lg leading-relaxed tracking-tight text-muted-foreground max-w-xl text-inter'
+            className='text-sm md:text-lg leading-relaxed tracking-tight text-muted-foreground max-w-xl text-inter'
           >
             Managing job applications can be overwhelming. Avoid unnecessary
             stress by ditching scattered notes and messy spreadsheets. Our goal

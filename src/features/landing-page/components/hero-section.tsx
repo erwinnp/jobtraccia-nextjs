@@ -19,7 +19,7 @@ const HeroSection = () => {
           },
         },
       }}
-      className='w-full min-h-[60vh] xl:min-h-screen flex justify-center items-center pt-24 md:pt-36 xl:pt-10 px-4'
+      className='w-full min-h-screen flex justify-center items-center md:pt-36 xl:pt-10 px-4'
     >
       <div className='w-full max-w-screen-xl mx-auto'>
         <div className='flex w-full text-center justify-center items-center gap-4 flex-col'>
@@ -31,13 +31,13 @@ const HeroSection = () => {
           <div className='flex gap-4 flex-col'>
             <motion.h1
               variants={FADE_DOWN_VARIANTS}
-              className='text-5xl lg:text-7xl tracking-tighter font-urbanist font-semibold max-w-2xl'
+              className='text-4xl md:text-5xl lg:text-7xl tracking-tighter font-urbanist font-semibold max-w-2xl'
             >
               Track and Manage Your Job Applications Effortlessly
             </motion.h1>
             <motion.p
               variants={FADE_DOWN_VARIANTS}
-              className='text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl font-inter'
+              className='text-base sm:text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl font-inter'
             >
               Manage job applications, track your progress, and stay organized
               throughout your job hunt.

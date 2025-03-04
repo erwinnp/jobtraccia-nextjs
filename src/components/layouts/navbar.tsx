@@ -24,7 +24,10 @@ export default function Navbar() {
         className='w-full rounded-md bg-zinc-950/20 p-3 backdrop-blur-lg'
       >
         <div className='flex w-full items-center justify-between'>
-          <Link href='/' className='text-3xl font-semibold font-urbanist'>
+          <Link
+            href='/'
+            className='text-2xl md:text-3xl font-semibold font-urbanist'
+          >
             Job<span className='text-blue-700 font-bold'>Traccia</span>
           </Link>
           <Link href='/dashboard/all-applications'>
