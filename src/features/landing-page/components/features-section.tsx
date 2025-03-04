@@ -1,6 +1,5 @@
 import { Briefcase, ListChecks, Rocket, Hand } from 'lucide-react';
 import { FADE_DOWN_VARIANTS } from '@/lib/framer-variant';
-import { MoveUpRight } from 'lucide-react';
 import * as motion from 'motion/react-client';
 
 const FeaturesSection = () => {
