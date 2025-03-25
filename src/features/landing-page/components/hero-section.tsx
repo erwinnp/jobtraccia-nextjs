@@ -1,8 +1,9 @@
 import PrimaryButton from '@/components/primary-button';
 import { Badge } from '@/components/ui/badge';
-import { FADE_DOWN_VARIANTS } from '@/lib/framer-variant';
+import { BLUR_VARIANTS, FADE_DOWN_VARIANTS } from '@/lib/framer-variant';
 import { MoveRight } from 'lucide-react';
 import * as motion from 'motion/react-client';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const HeroSection = () => {
@@ -19,9 +20,9 @@ const HeroSection = () => {
           },
         },
       }}
-      className='w-full min-h-screen flex justify-center items-center md:pt-36 xl:pt-10 px-4'
+      className='w-full flex justify-center items-center py-36 max-sm:pb-16 px-4'
     >
-      <div className='w-full max-w-screen-xl mx-auto'>
+      <div className='w-full max-w-screen-xl mx-auto flex flex-col gap-10'>
         <div className='flex w-full text-center justify-center items-center gap-4 flex-col'>
           <motion.div variants={FADE_DOWN_VARIANTS}>
             <Badge variant='outline' className='font-urbanist'>
@@ -51,6 +52,14 @@ const HeroSection = () => {
             </Link>
           </motion.div>
         </div>
+        <motion.div className='sm:px-4' variants={BLUR_VARIANTS}>
+          <Image
+            alt='dashboard'
+            src='/dashboard.png'
+            width={1920}
+            height={1011}
+          />
+        </motion.div>
       </div>
     </motion.section>
   );
